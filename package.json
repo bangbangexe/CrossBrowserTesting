@@ -1,0 +1,31 @@
+{
+  "name": "protractortypescriptcucumber",
+  "version": "1.0.0",
+  "description": "Protractor Typescript Framework",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run webdriver-update && npm run tsc ",
+    "test": "protractor JSFiles/CucumberConfig.js",
+    "tsc": "tsc",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "webdriver-update": "webdriver-manager update"
+  },
+  "author": "Mahesh Dindigala",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cucumber": "^6.0.0",
+    "@types/jasmine": "^3.5.2",
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "^13.5.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.5",
+    "iedriver": "^3.14.1",
+    "jasmine": "^3.5.0",
+    "protractor": "^5.4.3",
+    "protractor-cucumber-framework": "^6.2.0",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
