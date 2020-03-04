@@ -33,24 +33,24 @@ export let config: Config = {
             }
         }
     },
-    {
-        'name': 'Protractor Parallel Example',
-        'browserName': 'Firefox',
-        'platform': 'Windows 10',
-        record_video: true,
-        record_network: false,
-        record_snapshot: false,
-        metadata: {
-            browser: {
-                name: 'Firefox'
-            },
-            device: 'Virtual Machine',
-            platform: {
-                name: 'Windows',
-                version: '10'
-            }
-        }
-    },
+    // {
+    //     'name': 'Protractor Parallel Example',
+    //     'browserName': 'Firefox',
+    //     'platform': 'Windows 10',
+    //     record_video: true,
+    //     record_network: false,
+    //     record_snapshot: false,
+    //     metadata: {
+    //         browser: {
+    //             name: 'Firefox'
+    //         },
+    //         device: 'Virtual Machine',
+    //         platform: {
+    //             name: 'Windows',
+    //             version: '10'
+    //         }
+    //     }
+    // },
     // {
     //     'name': 'Protractor Parallel Example',
     //     'browserName': 'internet explorer',
@@ -73,7 +73,6 @@ export let config: Config = {
 
     specs: ['../FeatureFiles/*.feature'],
     cucumberOpts: {
-        // tags:"@AngularWelcome",
         format: "json:./cucumberreport.json",
         strict: true,
         require: [
