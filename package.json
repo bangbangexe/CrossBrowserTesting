@@ -25,6 +25,7 @@
     "protractor": "^5.4.3",
     "protractor-cucumber-framework": "^6.2.0",
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
+    "python": "0.0.4",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   }
