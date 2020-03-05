@@ -18,8 +18,4 @@ Examples:
    Then Validate Text as  "<key2>"
    Examples:
    | key1 | key2 |
-   | http://www.angularjs.org  | Welcome to Angular!  |
-
-
-
-  
+   | http://www.angularjs.org  | Welcome to Angular  |
