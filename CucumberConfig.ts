@@ -5,34 +5,34 @@ export let config: Config = {
     framework: 'custom',
     // path relative to the current config file
     frameworkPath: require.resolve('protractor-cucumber-framework'),
-    //directConnect: true,
+    directConnect: true,
     //seleniumAddress: 'http://localhost:4444/wd/hub',
 
     //seleniumAddress:'http://hub.crossbrowsertesting.com:80/wd/hub',
 
     // change this to your USERNAME and AUTHKEY
-    seleniumAddress: 'http://mahesh.dindigala@jivainfotech.com:u915458c1f206e77@hub.crossbrowsertesting.com:80/wd/hub',
+    //seleniumAddress: 'http://mahesh.dindigala@jivainfotech.com:u915458c1f206e77@hub.crossbrowsertesting.com:80/wd/hub',
 
     //add more browsers to this array for more parllel tests!!
-    multiCapabilities: [
-        {
-        'name': 'Protractor Parallel Example',
-        'browserName': 'Chrome',
-        'platform': 'Windows 10',
-        record_video: true,
-        record_network: false,
-        record_snapshot: false,
-        metadata: {
-            browser: {
-                name: 'chrome'
-            },
-            device: 'Virtual Machine',
-            platform: {
-                name: 'Windows',
-                version: '10'
-            }
-        }
-    },
+    // multiCapabilities: [
+    //     {
+    //     'name': 'Protractor Parallel Example',
+    //     'browserName': 'Chrome',
+    //     'platform': 'Windows 10',
+    //     record_video: true,
+    //     record_network: false,
+    //     record_snapshot: false,
+    //     metadata: {
+    //         browser: {
+    //             name: 'chrome'
+    //         },
+    //         device: 'Virtual Machine',
+    //         platform: {
+    //             name: 'Windows',
+    //             version: '10'
+    //         }
+    //     }
+    // },
     // {
     //     'name': 'Protractor Parallel Example',
     //     'browserName': 'Firefox',
@@ -69,7 +69,7 @@ export let config: Config = {
     //         }
     //     },
     // }
-    ],
+   // ],
 
     specs: ['../FeatureFiles/*.feature'],
     cucumberOpts: {
