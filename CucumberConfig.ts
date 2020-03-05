@@ -5,7 +5,7 @@ export let config: Config = {
     framework: 'custom',
     // path relative to the current config file
     frameworkPath: require.resolve('protractor-cucumber-framework'),
-    directConnect: true,
+    //directConnect: true,
     //seleniumAddress: 'http://localhost:4444/wd/hub',
 
     //seleniumAddress:'http://hub.crossbrowsertesting.com:80/wd/hub',
