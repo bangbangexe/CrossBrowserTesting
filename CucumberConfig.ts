@@ -17,7 +17,7 @@ export let config: Config = {
     multiCapabilities: [
         {
             'name': 'CrossBrowserTesting POC',
-            CBT_BROWSERNAME: '',
+            'browserName':'CBT_BROWSERNAME',
             // 'browserName': 'Chrome',
             // 'platform': 'Windows 10',
             record_video: true,
@@ -37,7 +37,7 @@ export let config: Config = {
 
         {
             'name': 'CrossBrowserTesting POC',
-            CBT_BROWSERNAME: '',
+            'browserName':'CBT_BROWSERNAME',
             // 'browserName': 'Firefox',
             // 'platform': 'Windows 10',
             record_video: true,
