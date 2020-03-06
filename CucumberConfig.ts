@@ -14,66 +14,66 @@ export let config: Config = {
     seleniumAddress: 'http://mahesh.dindigala@jivainfotech.com:u915458c1f206e77@hub.crossbrowsertesting.com:80/wd/hub',
 
     //add more browsers to this array for more parllel tests!!
-    multiCapabilities: [
-        {
-            'name': 'CrossBrowserTesting POC',
-            'browserName':'CBT_BROWSERNAME',
-            // 'browserName': 'Chrome',
-            // 'platform': 'Windows 10',
-            record_video: true,
-            record_network: false,
-            record_snapshot: false,
-            // metadata: {
-            //     browser: {
-            //         name: 'chrome'
-            //     },
-            //     device: 'Virtual Machine',
-            //     platform: {
-            //         name: 'Windows',
-            //         version: '10'
-            //     }
-            // }
-        },
+   // multiCapabilities: [
+    //     {
+    //         'name': 'CrossBrowserTesting POC',
+    //         'browserName':'',
+    //         // 'browserName': 'Chrome',
+    //         // 'platform': 'Windows 10',
+    //         record_video: true,
+    //         record_network: false,
+    //         record_snapshot: false,
+    //         // metadata: {
+    //         //     browser: {
+    //         //         name: 'chrome'
+    //         //     },
+    //         //     device: 'Virtual Machine',
+    //         //     platform: {
+    //         //         name: 'Windows',
+    //         //         version: '10'
+    //         //     }
+    //         // }
+    //     },
 
-        {
-            'name': 'CrossBrowserTesting POC',
-            'browserName':'CBT_BROWSERNAME',
-            // 'browserName': 'Firefox',
-            // 'platform': 'Windows 10',
-            record_video: true,
-            record_network: false,
-            record_snapshot: false,
-            // metadata: {
-            //     browser: {
-            //         name: 'Firefox'
-            //     },
-            //     device: 'Virtual Machine',
-            //     platform: {
-            //         name: 'Windows',
-            //         version: '10'
-            //     }
-            // }
-        },
-        // {
-        //     'name': 'CrossBrowserTesting POC',
-        //     CBT_BROWSERNAME: '',
-        //     'browserName': 'internet explorer',
-        //     'platform': 'Windows 10',
-        //     record_video: true,
-        //     record_network: false,
-        //     record_snapshot: false,
-        //     metadata: {
-        //         browser: {
-        //             name: 'internet explorer'
-        //         },
-        //         device: 'Virtual Machine',
-        //         platform: {
-        //             name: 'Windows',
-        //             version: '10'
-        //         }
-        //     },
-        // }
-    ],
+    //     {
+    //         'name': 'CrossBrowserTesting POC',
+    //         'browserName':'CBT_BROWSERNAME',
+    //         // 'browserName': 'Firefox',
+    //         // 'platform': 'Windows 10',
+    //         record_video: true,
+    //         record_network: false,
+    //         record_snapshot: false,
+    //         // metadata: {
+    //         //     browser: {
+    //         //         name: 'Firefox'
+    //         //     },
+    //         //     device: 'Virtual Machine',
+    //         //     platform: {
+    //         //         name: 'Windows',
+    //         //         version: '10'
+    //         //     }
+    //         // }
+    //     },
+    //     // {
+    //     //     'name': 'CrossBrowserTesting POC',
+    //     //     CBT_BROWSERNAME: '',
+    //     //     'browserName': 'internet explorer',
+    //     //     'platform': 'Windows 10',
+    //     //     record_video: true,
+    //     //     record_network: false,
+    //     //     record_snapshot: false,
+    //     //     metadata: {
+    //     //         browser: {
+    //     //             name: 'internet explorer'
+    //     //         },
+    //     //         device: 'Virtual Machine',
+    //     //         platform: {
+    //     //             name: 'Windows',
+    //     //             version: '10'
+    //     //         }
+    //     //     },
+    //     // }
+    // ],
 
     specs: ['../FeatureFiles/*.feature'],
     cucumberOpts: {
