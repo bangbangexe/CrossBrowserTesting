@@ -15,45 +15,42 @@ export let config: Config = {
 
     //add more browsers to this array for more parllel tests!!
    multiCapabilities: [
-        {
+         {
             'name': 'CrossBrowserTesting POC',
-            'browserName':'{provide name}',
-            // 'browserName': 'Chrome',
-            // 'platform': 'Windows 10',
+            'browserName': 'chrome',
+            'platform': 'Windows 10',
             record_video: true,
             record_network: false,
             record_snapshot: false,
-            // metadata: {
-            //     browser: {
-            //         name: 'chrome'
-            //     },
-            //     device: 'Virtual Machine',
-            //     platform: {
-            //         name: 'Windows',
-            //         version: '10'
-            //     }
-            // }
-        },
-
-        
-        // {
-        //     'name': 'CrossBrowserTesting POC',
-        //     'browserName': 'internet explorer',
-        //     'platform': 'Windows 10',
-        //     record_video: true,
-        //     record_network: false,
-        //     record_snapshot: false,
-        //     metadata: {
-        //         browser: {
-        //             name: 'internet explorer'
-        //         },
-        //         device: 'Virtual Machine',
-        //         platform: {
-        //             name: 'Windows',
-        //             version: '10'
-        //         }
-        //     },
-        // }
+            metadata: {
+                browser: {
+                    name: 'chrome'
+                },
+                device: 'Virtual Machine',
+                platform: {
+                    name: 'Windows',
+                    version: '10'
+                }
+            },
+        },        
+        {
+            'name': 'CrossBrowserTesting POC',
+            'browserName': 'internet explorer',
+            'platform': 'Windows 10',
+            record_video: true,
+            record_network: false,
+            record_snapshot: false,
+            metadata: {
+                browser: {
+                    name: 'internet explorer'
+                },
+                device: 'Virtual Machine',
+                platform: {
+                    name: 'Windows',
+                    version: '10'
+                }
+            },
+        }
     ],
 
     specs: ['../FeatureFiles/*.feature'],
