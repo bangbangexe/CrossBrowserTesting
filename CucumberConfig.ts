@@ -14,15 +14,23 @@ export let config: Config = {
     seleniumAddress: 'http://mahesh.dindigala@jivainfotech.com:u915458c1f206e77@hub.crossbrowsertesting.com:80/wd/hub',
 
     //add more browsers to this array for more parllel tests!!
-    multiCapabilities: [
-        {
-            name: process.env.CBT_BUILD_NAME,
-            browser_api_name: process.env.CBT_BROWSER,
-            os_api_name: process.env.CBT_OPERATING_SYSTEM,
-            screen_resolution: process.env.CBT_RESOLUTION,
-            record_video: true,
-            record_network: true,
-        },
+    capabilities:{
+        name: process.env.CBT_BUILD_NAME,
+        browser_api_name: process.env.CBT_BROWSER,
+        os_api_name: process.env.CBT_OPERATING_SYSTEM,
+        screen_resolution: process.env.CBT_RESOLUTION,
+        record_video: true,
+        record_network: true,
+    },
+    //multiCapabilities: [
+        // {
+        //     name: process.env.CBT_BUILD_NAME,
+        //     browser_api_name: process.env.CBT_BROWSER,
+        //     os_api_name: process.env.CBT_OPERATING_SYSTEM,
+        //     screen_resolution: process.env.CBT_RESOLUTION,
+        //     record_video: true,
+        //     record_network: true,
+        // },
         // {
         //     name: process.env.CBT_BUILD_NAME,
         //     browserName: 'firefox',
@@ -69,7 +77,7 @@ export let config: Config = {
         //         }
         //     },
         // }
-    ],
+   // ],
 
     specs: ['../FeatureFiles/*.feature'],
     cucumberOpts: {
