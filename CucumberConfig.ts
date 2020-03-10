@@ -17,22 +17,21 @@ export let config: Config = {
     multiCapabilities: [
         {
             name: process.env.CBT_BUILD_NAME,
-            browserName: 'chrome',
             browser_api_name: process.env.CBT_BROWSER,
-            platform: process.env.CBT_OPERATING_SYSTEM,
+            os_api_name: process.env.CBT_OPERATING_SYSTEM,
             screen_resolution: process.env.CBT_RESOLUTION,
             record_video: true,
             record_network: true,
         },
-        {
-            name: process.env.CBT_BUILD_NAME,
-            browserName: 'firefox',
-            browser_api_name: process.env.CBT_BROWSER,
-            platform: process.env.CBT_OPERATING_SYSTEM,
-            screen_resolution: process.env.CBT_RESOLUTION,
-            record_video: true,
-            record_network: true,
-        }
+        // {
+        //     name: process.env.CBT_BUILD_NAME,
+        //     browserName: 'firefox',
+        //     browser_api_name: process.env.CBT_BROWSER,
+        //     platform: process.env.CBT_OPERATING_SYSTEM,
+        //     screen_resolution: process.env.CBT_RESOLUTION,
+        //     record_video: true,
+        //     record_network: true,
+        // }
 
         //  {
         //     'name': 'CrossBrowserTesting',
