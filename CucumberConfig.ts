@@ -16,6 +16,7 @@ export let config: Config = {
     //add more browsers to this array for more parllel tests!!
     capabilities:{
         name: process.env.CBT_BUILD_NAME,
+        browserName: 'chrome',
         browser_api_name: process.env.CBT_BROWSER,
         os_api_name: process.env.CBT_OPERATING_SYSTEM,
         screen_resolution: process.env.CBT_RESOLUTION,
