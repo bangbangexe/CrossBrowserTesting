@@ -15,61 +15,61 @@ export let config: Config = {
 
     //add more browsers to this array for more parllel tests!!
    multiCapabilities: [
-    {
-        name : process.env.CBT_BUILD_NAME,
-        browserName: 'chrome',
-        browser_api_name: process.env.CBT_BROWSER,
-        platform: process.env.CBT_OPERATING_SYSTEM,
-        screen_resolution: process.env.CBT_RESOLUTION,
-        record_video : true,
-        record_network : true,
-    },
-    {
-        name : process.env.CBT_BUILD_NAME,
-        browserName: 'firefox',
-        browser_api_name: process.env.CBT_BROWSER,
-        platform: process.env.CBT_OPERATING_SYSTEM,
-        screen_resolution: process.env.CBT_RESOLUTION,
-        record_video : true,
-        record_network : true,
-    }
+    // {
+    //     name : process.env.CBT_BUILD_NAME,
+    //     browserName: 'chrome',
+    //     browser_api_name: process.env.CBT_BROWSER,
+    //     platform: process.env.CBT_OPERATING_SYSTEM,
+    //     screen_resolution: process.env.CBT_RESOLUTION,
+    //     record_video : true,
+    //     record_network : true,
+    // },
+    // {
+    //     name : process.env.CBT_BUILD_NAME,
+    //     browserName: 'firefox',
+    //     browser_api_name: process.env.CBT_BROWSER,
+    //     platform: process.env.CBT_OPERATING_SYSTEM,
+    //     screen_resolution: process.env.CBT_RESOLUTION,
+    //     record_video : true,
+    //     record_network : true,
+    // }
 
-        //  {
-        //     'name': 'CrossBrowserTesting POC',
-        //     'browserName': 'chrome',
-        //     'platform': 'Windows 10',
-        //     record_video: true,
-        //     record_network: false,
-        //     record_snapshot: false,
-        //     metadata: {
-        //         browser: {
-        //             name: 'chrome'
-        //         },
-        //         device: 'Virtual Machine',
-        //         platform: {
-        //             name: 'Windows',
-        //             version: '10'
-        //         }
-        //     },
-        // },        
-        // {
-        //     'name': 'CrossBrowserTesting POC',
-        //     'browserName': 'internet explorer',
-        //     'platform': 'Windows 10',
-        //     record_video: true,
-        //     record_network: false,
-        //     record_snapshot: false,
-        //     metadata: {
-        //         browser: {
-        //             name: 'internet explorer'
-        //         },
-        //         device: 'Virtual Machine',
-        //         platform: {
-        //             name: 'Windows',
-        //             version: '10'
-        //         }
-        //     },
-        // }
+         {
+            'name': 'CrossBrowserTesting',
+            'browserName': 'chrome',
+            'platform': 'Windows 10',
+            record_video: true,
+            record_network: false,
+            record_snapshot: false,
+            metadata: {
+                browser: {
+                    name: 'chrome'
+                },
+                device: 'Virtual Machine',
+                platform: {
+                    name: 'Windows',
+                    version: '10'
+                }
+            },
+        },        
+        {
+            'name': 'CrossBrowserTesting',
+            'browserName': 'internet explorer',
+            'platform': 'Windows 10',
+            record_video: true,
+            record_network: false,
+            record_snapshot: false,
+            metadata: {
+                browser: {
+                    name: 'internet explorer'
+                },
+                device: 'Virtual Machine',
+                platform: {
+                    name: 'Windows',
+                    version: '10'
+                }
+            },
+        }
     ],
 
     specs: ['../FeatureFiles/*.feature'],
